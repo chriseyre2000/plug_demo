@@ -1,21 +1,8 @@
 # PlugDemo
 
-**TODO: Add description**
+** This is a simple sample plug application.  **
 
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `plug_demo` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [{:plug_demo, "~> 0.1.0"}]
-end
-```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/plug_demo](https://hexdocs.pm/plug_demo).
+It was based upon the instructions in  https://elixirschool.com/en/lessons/specifics/plug/
 
 
 This is a test application to experiment with the Plug framework
@@ -23,6 +10,8 @@ This is a test application to experiment with the Plug framework
 To run use:
 
 mix run --no-halt
+
+The only gotcha I found was that http://localhost:8080 did not work.
 
 Then visit http://127.0.0.1:8080
 
