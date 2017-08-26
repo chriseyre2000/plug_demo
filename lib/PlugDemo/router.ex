@@ -1,6 +1,8 @@
 defmodule PlugDemo.Router do
   use Plug.Router
 
+  plug PlugDemo.TextFilter
+
   plug :match
   plug :dispatch
 
