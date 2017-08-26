@@ -2,21 +2,23 @@
 
 ** This is a simple sample plug application.  **
 
-It was based upon the instructions in  https://elixirschool.com/en/lessons/specifics/plug/
+It started out based upon the instructions in https://elixirschool.com/en/lessons/specifics/plug/
 
-It also acts as a simple heroku elixir demo app
+Note that locally you need to look at http://127.0.0.1:5000 rather than localhost.
 
-This is a test application to experiment with the Plug framework
 
 To run use:
 
 mix run --no-halt
 
-The only gotcha I found was that http://localhost:5000 did not work.
 
-Then visit http://127.0.0.1:5000
+This app has been extended to deploy to heroku - it gets the heroku port from it's env variable
 
-create a heroku account and make an application
+
+## Deploying to heroku
+
+
+create a heroku account and create an application
 
 For elixir 1.4 support you need
 
