@@ -3,8 +3,11 @@ defmodule PlugDemo.Application do
   require Logger
 
   def start(_type, _args) do
+
+    {port,_} = (System.get_env("PORT") || "5000") |> Integer.parse
+
     children = [
-      Plug.Adapters.Cowboy.child_spec(:http, PlugDemo.Router, [], port: 8080)
+      Plug.Adapters.Cowboy.child_spec(:http, PlugDemo.Router, [], port: port)
     ]
 
     Logger.info "Started application"
