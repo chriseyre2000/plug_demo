@@ -1,7 +1,7 @@
 defmodule PlugDemo.Router do
   use Plug.Router
 
-  plug PlugDemo.TextFilter
+  plug PlugDemo.SetContentTypePlug, "text/plain"
 
   plug :match
   plug :dispatch
