@@ -15,15 +15,15 @@ defmodule PlugDemo.Mixfile do
   # Type "mix help compile.app" for more information
   def application do
       [
-        applications: [:logger, :cowboy, :plug],
+        applications: [:logger, :plug_cowboy, :plug],
         mod: {PlugDemo.Application, []}
       ]
   end
 
   defp deps do
     [
-        {:cowboy, "~> 1.1.2"},
-        {:plug, "~> 1.3.4"},
+        {:plug_cowboy, "~> 1.0"},
+        {:plug, "~> 1.11.0"},
     ]
   end
 end
